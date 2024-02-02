@@ -250,6 +250,7 @@ function LetterDetailView({ savedLetters, setSavedLetters }) {
                                 <p style={{ marginBottom: "10px", fontWeight: "bold" }}>Dear. {koreanName}</p>
                                 {/* 편지 내용 textarea ----------------------------------- */}
                                 <LetterContentTextArea
+                                    $isModifying={isModifying}
                                     defaultValue={item.content}
                                     onChange={handleContentChange}
                                     ref={contentArea} spellCheck={false} maxLength={200} readOnly={!isModifying}>
