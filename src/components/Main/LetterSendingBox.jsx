@@ -87,13 +87,12 @@ export const ChiikawaOnBox = styled.img`
         right: 20px;
     `
 
-function LetterSendingBox({ savedLetters, setSavedLetters }) {
+function LetterSendingBox({ selectedCharacter, setSelectedCharacter, savedLetters, setSavedLetters }) {
 
     const letterInput = useRef();
     const writerInput = useRef();
 
     //옵션으로 선택한 캐릭터
-    const [selectedCharacter, setSelectedCharacter] = useState("chiikawa");
 
     const handleSendButtonClick = () => {
         const setDate = (date) => {

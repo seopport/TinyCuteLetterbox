@@ -4,7 +4,6 @@ import LetterDetailPage from "components/Detail/LetterDetailPage";
 import { useState, useEffect } from "react";
 
 const Router = () => {
-  const [selectedCharacter, setSelectedCharacter] = useState("chiikawa");
   const [savedLetters, setSavedLetters] = useState([]);
 
   useEffect(() => {
@@ -27,8 +26,6 @@ const Router = () => {
           path="/"
           element={
             <Home
-              selectedCharacter={selectedCharacter}
-              setSelectedCharacter={setSelectedCharacter}
               savedLetters={savedLetters}
               setSavedLetters={setSavedLetters}
             />
