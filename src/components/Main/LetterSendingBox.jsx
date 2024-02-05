@@ -90,6 +90,7 @@ export const ChiikawaOnBox = styled.img`
     `
 
 function LetterSendingBox() {
+
     const letterContextData = useContext(LetterContext)
     console.log(letterContextData.savedLetters)
     const savedLetters = letterContextData.savedLetters;
